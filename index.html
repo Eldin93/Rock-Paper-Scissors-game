@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Rock,Paper,Scissors</title>
+  </head>
+  <body>
+    <header><h1>ROCK - PAPER - SCISSORS</h1></header>
+    <section>
+      <h1 id="title">
+        Let the game beggin <br />
+        First to score 5 points wins!
+      </h1>
+
+      <div class="players">
+        <div class="player">
+          <img
+            src="/fist/android-chrome-192x192.png"
+            id="player-icon"
+            alt="favicon.ico"
+          />
+          <p id="player-score">Player: 0</p>
+        </div>
+        <div class="computer">
+          <img
+            src="/hand/android-chrome-192x192.png"
+            id="computer-icon"
+            alt="favicon.ico"
+          />
+          <p id="computer-score">Computer: 0</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="icons">
+        <button id="rock">
+          <img src="/fist/android-chrome-192x192.png" alt="rock-image" />
+        </button>
+        <button id="paper">
+          <img src="/hand/android-chrome-192x192.png" alt="paper-image" />
+        </button>
+        <button id="scissors">
+          <img
+            src="/scissors/android-chrome-192x192.png"
+            alt="scissors-image"
+          />
+        </button>
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <button id="new-game">Start new game</button>
+        </div>
+      </div>
+    </section>
+
+    <footer><p>Copyright &#169; 2022 Eldin93</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
