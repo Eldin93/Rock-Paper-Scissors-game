@@ -11,9 +11,9 @@ const modal = document.getElementById("myModal");
 const newGameBtn = document.getElementById("new-game");
 
 // Game variables
-const rock = "http://127.0.0.1:5500/fist/android-chrome-192x192.png";
-const paper = "http://127.0.0.1:5500/hand/android-chrome-192x192.png";
-const scissors = "http://127.0.0.1:5500/scissors/android-chrome-192x192.png";
+const rock = "http://127.0.0.1:5500/rock.png";
+const paper = "http://127.0.0.1:5500/paper.png";
+const scissors = "http://127.0.0.1:5500/scissors.png";
 items = [rock, paper, scissors];
 let playerScore = 0;
 let computerScore = 0;
@@ -23,6 +23,7 @@ let computerScore = 0;
 function randomSelection() {
   let random = items[Math.floor(Math.random() * items.length)];
   computerIcon.src = random;
+  console.log(computerIcon.src);
   return computerIcon.src;
 }
 
