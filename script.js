@@ -11,9 +11,16 @@ const modal = document.getElementById("myModal");
 const newGameBtn = document.getElementById("new-game");
 
 // Game variables
-const rock = "http://127.0.0.1:5500/rock.png";
-const paper = "http://127.0.0.1:5500/paper.png";
-const scissors = "http://127.0.0.1:5500/scissors.png";
+/*
+const rock = "/rock.png";
+const paper = "/paper.png";
+const scissors = "/scissors.png";
+*/
+
+const rock = document.getElementById("rockImg").src;
+const paper = document.getElementById("paperImg").src;
+const scissors = document.getElementById("scissorsImg").src;
+
 items = [rock, paper, scissors];
 let playerScore = 0;
 let computerScore = 0;
